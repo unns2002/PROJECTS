@@ -1,0 +1,9 @@
+<h1> THE ONLINE COUNT PAGE</h1>
+
+<a href = '{% url 'aboutpage' %}'> <h3> ABOUT MY PAGE </h3></a>
+
+<form action='{% url 'counting' %}'>
+  <textarea cols='70' rows='20' name='fulltext'></textarea>
+  <br />
+  <input type='submit' value = 'count!' / />
+  </form>

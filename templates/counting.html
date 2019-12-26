@@ -1,0 +1,9 @@
+<h1>There are {{ count }} words in your inserted sentence</h1>
+<a href = "{% url 'homepage' %}">START AGAIN</a>
+<h1>YOUR TEXT:</h1>
+{{fulltext}}
+<h1>your word count:</h1>
+{% for word, counttotal in sortedwords %}
+{{ word }} - {{ counttotal }}
+<br />
+{% endfor %}
